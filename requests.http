@@ -1,0 +1,18 @@
+### Create a payment-success event
+POST http://localhost:8080/api/events
+Content-Type: application/json
+
+{
+  "eventType": "PAYMENT_SUCCESS",
+  "userId": "user-1",
+  "referenceId": "payment-1001"
+}
+
+### Read an event (replace UUID)
+GET http://localhost:8080/api/events/00000000-0000-0000-0000-000000000000
+
+### Read latest notifications
+GET http://localhost:8080/api/notifications/users/user-1?limit=20
+
+### Health
+GET http://localhost:8080/actuator/health

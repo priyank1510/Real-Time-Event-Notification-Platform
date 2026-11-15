@@ -1,0 +1,3 @@
+@echo off
+echo Starting Spring Boot + PostgreSQL + Redis in Docker...
+docker compose up --build
